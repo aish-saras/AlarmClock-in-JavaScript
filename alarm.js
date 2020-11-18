@@ -125,8 +125,8 @@ function alarm() {
         let m;
 
 
-        h = (hour.value < 10) ? "0" + hour.value : h;
-        m = (min.value < 10) ? "0" + min.value : m;
+        h = (hour.value < 10) ? "0" + hour.value : hour.value;
+        m = (min.value < 10) ? "0" + min.value : min.value;
 
 
         setAlarm.innerHTML = `<p>Alarm is set for ${h}:${m}</p>
